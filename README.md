@@ -1,14 +1,17 @@
 # Welcome to the /home of @mschlr
 
-## Tracking of Configuration Files
-
 This repository include some of my _dotfiles_.
+
+
+![Terminal Screenshot](resources/pics/terminal.png)
+
+
+## Tracking of Configuration Files
 
 For file-tracking I use the set-up described by StreakyCobra on 
 [Hacker News](https://news.ycombinator.com/item?id=11071754).
 
-
-## Explanation of the _dotgit_-method
+## Explanation of the `dotgit`-method
 
 1. Initialization of the git repository takes place in `$HOME`.
 
@@ -24,9 +27,9 @@ file changes.
 ```bash
 dotgit status
 dotgit add .vimrc .profile .tmux.conf .bash_aliases .local/include/*
-dotgit commit -m "initial commit:
+dotgit commit -m "initial commit"
 dotgit push
 ```
 
-Tedious but works out of the box using `git`!
+Tedious, but it works out-of-the-box using `git`!
 

@@ -18,6 +18,6 @@ fi
 
 # source other stuff
 for i in $HOME/.local/include/*;
-	do source $i
+    do source $i
 done
 
