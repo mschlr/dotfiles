@@ -1,0 +1,11 @@
+[user]
+	name = Martin Schuler
+	email = martin.schuler@outlook.com
+	signingkey = 0640AA92360A5281
+[commit]
+	gpgsign = true
+[alias]
+	dog = log --graph --format=format:'%C(bold blue)%h%C(reset) - %C(dim cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(dim yellow)%d%C(reset)%n''           %C(white)%s%C(reset) %C(dim white)- %an%C(reset)'
+	dv = difftool -t vimdiff HEAD HEAD~1
+[core]
+  editor = vim

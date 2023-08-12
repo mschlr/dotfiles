@@ -31,5 +31,27 @@ dotgit commit -m "initial commit"
 dotgit push
 ```
 
-Tedious, but it works out-of-the-box using `git`!
+3. For fetching the configuration files from the repository on a new machine
+(migration of the setup), one needs to define the dotgit alias beforehand as 
+such:
 
+```bash
+alias dotgit='/usr/bin/git --git-dir=$HOME/.dotgit/ --work-tree=$HOME'
+dotgit config status.showUntrackedFiles no
+```
+
+When done. The dotfiles can be cloned into a bare repository referring to the
+`.dotgit` directory.
+
+```bash
+git clone --bare <git-repo-url> $HOME/.dotgit
+dotgit checkout
+```
+
+Config files tracking without additional tools. Just `git`!
+
+---
+
+Tasks:
+- [ ] Add more configuration files
+- [ ] Add automated script for fetching and backups
