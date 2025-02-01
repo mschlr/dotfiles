@@ -3,12 +3,12 @@
 This repository include some of my _dotfiles_.
 
 
-![Terminal Screenshot](resources/pics/terminal.png)
+![Terminal Screenshot](Public/Pictures/terminal.png)
 
 
 ## Tracking of Configuration Files
 
-For file-tracking I use the set-up described by StreakyCobra on 
+For file-tracking I use the set-up described by StreakyCobra on
 [Hacker News](https://news.ycombinator.com/item?id=11071754).
 
 ## Explanation of the `dotgit`-method
@@ -17,11 +17,11 @@ For file-tracking I use the set-up described by StreakyCobra on
 
 ```bash
 git init --bare $HOME/.dotfiles
-alias dotgit='/usr/bin/git --git-dir=$HOME/.dotgit/ --work-tree=$HOME'
+alias dotgit='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 dotgit config status.showUntrackedFiles no
 ```
 
-2. Next one would add a handful of _dotfiles_ that are of interest to track 
+2. Next one would add a handful of _dotfiles_ that are of interest to track
 file changes.
 
 ```bash
@@ -32,11 +32,11 @@ dotgit push
 ```
 
 3. For fetching the configuration files from the repository on a new machine
-(migration of the setup), one needs to define the dotgit alias beforehand as 
+(migration of the setup), one needs to define the dotgit alias beforehand as
 such:
 
 ```bash
-alias dotgit='/usr/bin/git --git-dir=$HOME/.dotgit/ --work-tree=$HOME'
+alias dotgit='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 dotgit config status.showUntrackedFiles no
 ```
 
@@ -44,7 +44,7 @@ When done. The dotfiles can be cloned into a bare repository referring to the
 `.dotgit` directory.
 
 ```bash
-git clone --bare <git-repo-url> $HOME/.dotgit
+git clone --bare <git-repo-url> $HOME/.dotfiles
 dotgit checkout
 ```
 

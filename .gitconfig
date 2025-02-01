@@ -1,7 +1,7 @@
 [user]
 	name = Martin Schuler
 	email = martin.schuler@outlook.com
-	signingkey = 0640AA92360A5281
+	signingkey = 57440E10CE4C61C4
 [commit]
 	gpgsign = true
 [alias]
